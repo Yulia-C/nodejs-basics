@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-basics",
+  "version": "1.0.0",
+  "main": "about-time.js",
+  "author": "Yulia C",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ms": "^2.1.3"
+  }
+}
