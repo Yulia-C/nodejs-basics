@@ -17,7 +17,7 @@ function getCountries() {
         return country = {
             name: country.name.common,
             population: country.population,
-            flag: country.flags.png,
+            flag: country.flags.svg,
         }
 
     }).sort((countryA, countryB) => countryB.population - countryA.population)
@@ -28,7 +28,7 @@ function downloadFlags(countries) {
     const prms = countries.map(country => {
         return utilService.download(
             country.flag,
-            `data/flags/${country.name}.png`,
+            `data/flags/${country.name}.svg`,
             console.log(' country.flags.svg:', country.flag)
         )
     })
