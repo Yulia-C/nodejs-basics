@@ -22,7 +22,7 @@ function createPdf() {
         headers: ['Country', 'Capital', 'Population'],
         rows: mappedAndSorted.map(country => [country.name, country.capital, country.population],)
     }
-    return doc.table(table, { columnsSize: [200, 100, 100] })
+    return doc.table(table, { columnsSize: [150, 125, 125] })
 }
 
 function getMappedAndSortedCountries(countries) {
